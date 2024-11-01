@@ -1,10 +1,12 @@
-FROM gcc:latest
+FROM gcc AS builder
 
-WORKDIR /app
+WORKDIR /src
 
-COPY . .
+COPY *.c .
 
 RUN gcc main.c -o calc
 
-ENTRYPOINT ["./calc"]
+FROM ubuntu:latest
+COPY --from=builder src/calc /usr/bin/calc
 
+ENTRYPOINT ["calc"]
