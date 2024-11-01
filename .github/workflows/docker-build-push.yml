@@ -28,6 +28,6 @@ jobs:
           context: .
           push: true
           tags: |
-            riabokon11620/calculator:${{ github.sha }}
-            riabokon11620/calculator:latest
+            riabokon11620/calc:${{ github.sha }}
+            riabokon11620/calc:latest
 

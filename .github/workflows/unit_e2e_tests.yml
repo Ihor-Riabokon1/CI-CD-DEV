@@ -45,4 +45,4 @@ jobs:
       - name: Run end-to-end tests
         run: |
           chmod +x e2e-tests.sh
-          ./e2e-tests.sh "riabokon11620/calculator:${{ github.sha }}"
+          ./e2e-tests.sh "riabokon11620/calc:${{ github.sha }}"
