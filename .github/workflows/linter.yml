@@ -3,7 +3,7 @@ name: Run Linter
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   linter:
