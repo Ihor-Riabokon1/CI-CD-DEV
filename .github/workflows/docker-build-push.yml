@@ -1,6 +1,7 @@
 name: Build and Push Docker Image
 #1
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -23,11 +24,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v2
         with:
           context: .
           push: true
           tags: |
             riabokon11620/calc:${{ github.sha }}
             riabokon11620/calc:latest
-
