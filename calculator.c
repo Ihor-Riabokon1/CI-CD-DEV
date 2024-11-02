@@ -3,6 +3,13 @@
 
 int err_code = 0;
 
+
+int e2e() {
+   int check[10];
+   check[11] = 12;
+}
+
+
 double calculate(double num1, double num2, char operation) {
     err_code = 0;
 
