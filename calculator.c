@@ -2,6 +2,8 @@
 #define ERR_DIV_BY_ZERO 2
 
 int err_code = 0;
+int lintercheck;
+
 
 double calculate(double num1, double num2, char operation) {
     err_code = 0;
