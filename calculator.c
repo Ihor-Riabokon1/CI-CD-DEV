@@ -2,12 +2,7 @@
 #define ERR_DIV_BY_ZERO 2
 
 int err_code = 0;
-
-
-int e2e() {
-   int check[10];
-   check[11] = 12;
-}
+int lintercheck;
 
 
 double calculate(double num1, double num2, char operation) {
@@ -16,10 +11,10 @@ double calculate(double num1, double num2, char operation) {
     double result;
     switch (operation) {
         case '+':
-            result = num1 + num2;
+            result = num1 + num2 + 1;
             break;
         case '-':
-            result = num1 - num2 - 1;
+            result = num1 - num2;
             break;
         case 'x':
             result = num1 * num2;
